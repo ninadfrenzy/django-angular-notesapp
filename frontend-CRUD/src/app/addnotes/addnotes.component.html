@@ -1,0 +1,25 @@
+<section class="section">
+  <div class="container has-text-centered">
+    <h1 class="is-size-1">SIMPLE NOTES</h1>
+
+  </div>
+  <div class="columns">
+    <div class="column is-6 is-offset-3">
+      <label for="note" class="label">Note</label>
+      <textarea class="textarea" name="note" [(ngModel)]="noteText"></textarea>
+    </div>
+
+  </div>
+  <div class="columns">
+    <div class="column is-4 is-offset-3">
+      <label for="id" class="label">ID</label>
+      <h1 class="is-size-3">{{noteId}}</h1>
+    </div>
+
+  </div>
+  <div class="container has-text-centered">
+    <button class="button is-success" style="margin-right: 20px;" (click)="saveNote()">Save</button>
+    <button class="button is-link" (click)="showAllNotes()">All notes</button>
+  </div>
+
+</section>

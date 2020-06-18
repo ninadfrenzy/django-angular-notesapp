@@ -1,0 +1,8 @@
+<div class="container has-text-centered">
+  <h1 class="is-size-1">ALL NOTES</h1>
+  <div class="note" *ngFor="let note of notes; let i=index;">
+    <h1 class="is-size-5">ID: {{note["id"]}}</h1>
+    <h1 class="is-size-5">NOTE: {{note["text"]}}</h1>
+    <button class="button is-danger is-small" (click)=deleteNote(note.id) >delete</button>
+  </div>
+</div>
